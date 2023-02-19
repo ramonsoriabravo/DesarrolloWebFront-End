@@ -1,0 +1,158 @@
+.contacto p,
+.contacto h2,
+.contacto ul {
+    margin: 0;
+    padding: 0;
+}
+
+.contacto {
+    margin-top: 15px;
+    font-size: 15px;
+    border-radius: 14px;
+    background-color: #2b2726;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    
+    color: #bacca4;
+    padding: 20px 25px 30px;
+    display: grid;
+    gap: 25px;
+}
+
+.contacto .text-titulo {
+    font-size: 23px;
+    text-align: left;
+    padding: 10px 30px;
+    margin-bottom: 10px;    
+}
+
+.cont-detalle,
+.cont-form {
+    display: grid;
+    gap: 18px;
+}
+
+.cont-detalle-grupo i{
+    color:orangered;
+    font-size: 18px;
+}
+
+.cont-detalle-grupo,
+.cont-form-grupo {
+    display: grid;
+    gap: 3px;
+}
+
+.cont-label {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.cont-form input,
+.cont-form textarea {
+    border-radius: 8px;
+    border: none;
+    height: 35px;
+    padding: 5px 8px;
+    font-size: 16px;
+}
+
+.cont-form textarea {
+    height: auto;
+    resize: vertical;
+}
+
+.cont-form-submit {
+    width: 100%;
+    height: 40px;
+    text-transform: uppercase;
+
+    background-color: #0d4a53;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 7px;
+    border: 1px solid #bacca4;
+    cursor: pointer;
+}
+
+.cont-form-submit:hover {
+    background-color: #0d4a53;
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.4);
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;   
+}
+
+.social-list img {
+    /*en caso de poner una imagen*/
+    height: 18px;
+}
+
+.social-item a:hover {
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5);
+}
+
+.social-link {
+    font-size: 18px;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .contacto {
+        font-size: 16px;
+        padding:20px 25px 30px;
+        /* padding: 60px 50px 30px; */
+        max-width: 900px;
+        margin: 15px auto;
+    }
+
+    .contacto .text-titulo {
+        font-size: 30px;
+        padding: 10px 30px;
+    }
+
+    .social-list {
+        justify-content: flex-start;
+    }
+
+    .social-list img {
+        height: 22px;
+    }
+
+    .social-link {
+        font-size: 22px;
+    }
+
+    /*Defino las areas de GRID*/
+    .contacto .text-titulo{
+        grid-area: titulo;
+    }
+
+    .cont-detalle{
+        grid-area: detalles;
+    }
+
+    .cont-form{
+        grid-area: form;
+    }
+
+    .social{
+        grid-area: social;
+    }
+
+    .contacto{
+        display: grid;
+        grid: "titulo titulo" auto
+              "detalles form" 1fr
+              "social form" auto /
+              1fr    1fr;
+              align-items: start;         
+
+    }
+
+
+
+}

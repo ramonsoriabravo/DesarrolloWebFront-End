@@ -1,0 +1,36 @@
+.experiencia {
+    /*margin-top: 10px;*/
+    padding-top: 20px;
+    /*padding-bottom: 20px;*/
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    
+}
+
+.exp-contenido {
+    display: flex;
+    justify-content:space-around;
+    align-items:inherit;
+    flex-wrap: wrap;   
+
+   /* background-color: #ece1c3;*/
+   background-color: #18182393;
+    padding: 40px 15px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.exp-contenido article {
+    /*background-color: #f8faf9;*/
+    background-color: #afafb6;
+    color: rgb(3, 3, 3);
+    max-width: 500px;
+    padding: 20px 30px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.exp-contenido h4{
+    color:rgb(138, 39, 3);
+    font-size: 18px;
+    font-style: italic;
+}

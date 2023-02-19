@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url(menu.css);
+@import url(perfil.css);
+@import url(experiencia.css);
+@import url(habilidades.css);
+@import url(contacto.css);
+@import url(footer.css);
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	/*listo*/
+}
+
+html {
+	scroll-behavior: smooth;
+	/*scroll suavizado*/
+	/*background-color: #8ebdb6;*/
+	background-color:grey;
+	/*listo*/
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	padding: 60px 20px 0;
+	/*padding arriba, izq y der, abajo*/
+	/*listo*/
+}
+
+.header {
+	background-color: #195e63;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7);
+
+	height: 60px;
+	/*cambio de 90 a 60*/
+
+	width: 100%;
+	position: fixed;
+	/* fixed fija la posicion de header */
+	top: 0;
+	left: 0;
+	/*listo*/
+}
+
+.text-titulo {
+	font-size: 22px;
+	color: #d7d3e0;
+	background-color: rgb(60, 65, 65);
+	padding: 10px 40px;
+	font-style: normal;
+	border-radius: 5px;
+	box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+section[id] {
+	scroll-margin-top: 70px;
+	/*Margen superior de desplazamiento*/
+}
+
+section {
+	width: 98%;
+	margin: auto;
+}
+
+article {
+	padding: 10px;
+}
+
+@media (min-width: 768px) {
+
+	body {
+		padding-top: 90px;
+	}
+
+	.header {
+		height: 90px;
+	}
+
+	section[id] {
+		scroll-margin-top: 100px;
+		/*Margen superior de desplazamiento*/
+	}
+}
