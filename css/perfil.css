@@ -27,17 +27,18 @@
     font-weight: bold;
 }
 
-.perfil-datos {
+#info-datos {
+    /*Tamaño adaptable*/
     font-size: 3vw;
+}
+
+.perfil-datos {
     font-weight: bold;
     line-height: 1.5;
-    /*probando
-    width:max-content;*/
 }
 
 .sector-datos {
     margin: 15px auto;
-    font-size: 18px;    
     font-style: italic;
 }
 
@@ -58,9 +59,12 @@
         font-size: 42px;
     }
 
-    .perfil-datos {
+    #info-datos {
+        /*tamaño adaptable*/
         font-size: 2vw;
-        /*font-size: 23px;*/
+    }
+
+    .perfil-datos {
         line-height: 2.2;
     }
 
